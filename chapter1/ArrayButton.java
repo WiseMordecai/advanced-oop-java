@@ -27,7 +27,9 @@ public class ArrayButton extends JFrame implements ActionListener {
     // WORKING)
     container.add(label);
     label.setHorizontalAlignment(JLabel.CENTER); // THIS IS REPLACE AND A BETTER WAY
+
     // OR
+
     // label = new JLabel("Enter any button to display its message..",
     // JLabel.CENTER);
     container.add(southPanel, "South");
