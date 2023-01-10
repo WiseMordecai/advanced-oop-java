@@ -18,13 +18,14 @@ class Caller implements Runnable {
   public Caller(String message, MsgSender sender) {
     this.sender = sender;
     this.message = message;
-    t = new Thread();
+    t = new Thread(this);
     t.start();
   }
 
   @Override
   public void run() {
     sender.sendMessage(message);
+    System.out.println("Child Thread Exiting " + t.getName());
   }
 }
 
@@ -43,5 +44,7 @@ public class DemonstrateThread2 {
     } catch (InterruptedException e) {
       System.out.println("Interrupted");
     }
+
+    System.out.println("Main Thread Exiting");
   }
 }
