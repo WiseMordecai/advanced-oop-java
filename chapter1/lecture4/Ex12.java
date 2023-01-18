@@ -7,30 +7,33 @@ import java.awt.event.*;
 public class Ex12 extends JFrame implements ActionListener, ItemListener {
   Container container;
   ButtonGroup buttonGroup;
-  JCheckBox checkBox, checkBox2, checkBox3;
+  // JCheckBox checkBox, checkBox2, checkBox3;
+  JRadioButton radioButton, radioButton2, radioButton3;
+  // Here to make it only allow you to choose one box "ButtonGroup is needed"
+  // it also works with JCheckBox if we do it the same as JRadioButton :D
   JLabel label;
 
   public Ex12() {
     container = getContentPane();
     container.setLayout(new FlowLayout());
     label = new JLabel("Select");
-    checkBox = new JCheckBox("Java");
-    checkBox2 = new JCheckBox("Py");
-    checkBox3 = new JCheckBox("C++");
+    radioButton = new JRadioButton("Java");
+    radioButton2 = new JRadioButton("Py");
+    radioButton3 = new JRadioButton("C++");
 
     container.add(label);
-    container.add(checkBox);
-    container.add(checkBox2);
-    container.add(checkBox3);
+    container.add(radioButton);
+    container.add(radioButton2);
+    container.add(radioButton3);
 
-    checkBox.addItemListener(this);
-    checkBox2.addItemListener(this);
-    checkBox3.addItemListener(this);
+    radioButton.addItemListener(this);
+    radioButton2.addItemListener(this);
+    radioButton3.addItemListener(this);
 
     buttonGroup = new ButtonGroup();
-    buttonGroup.add(checkBox);
-    buttonGroup.add(checkBox2);
-    buttonGroup.add(checkBox3);
+    buttonGroup.add(radioButton);
+    buttonGroup.add(radioButton2);
+    buttonGroup.add(radioButton3);
 
     setTitle("Check Box");
     setSize(1000, 800);
@@ -45,18 +48,18 @@ public class Ex12 extends JFrame implements ActionListener, ItemListener {
   @Override
   public void itemStateChanged(ItemEvent e) {
     String str = "";
-    if (checkBox.isSelected()) {
-      str += checkBox.getText();
+    if (radioButton.isSelected()) {
+      str += radioButton.getText();
       str += " ";
     }
 
-    if (checkBox2.isSelected()) {
-      str += checkBox2.getText();
+    if (radioButton2.isSelected()) {
+      str += radioButton2.getText();
       str += " ";
     }
 
-    if (checkBox3.isSelected()) {
-      str += checkBox3.getText();
+    if (radioButton3.isSelected()) {
+      str += radioButton3.getText();
       str += " ";
     }
     label.setText("You Know: \n" + str);
