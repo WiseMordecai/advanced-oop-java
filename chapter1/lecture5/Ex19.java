@@ -23,7 +23,7 @@ public class Ex19 extends JFrame implements MouseMotionListener {
   }
 
   @Override
-  public void mouseDragged(java.awt.event.MouseEvent e) {
+  public void mouseDragged(MouseEvent e) {
     System.out.println("Mouse Dragged");
     container.setBackground(Color.MAGENTA);
     System.out.println("x : " + e.getX() + " | Y : " + e.getY());
@@ -31,7 +31,7 @@ public class Ex19 extends JFrame implements MouseMotionListener {
   }
 
   @Override
-  public void mouseMoved(java.awt.event.MouseEvent e) {
+  public void mouseMoved(MouseEvent e) {
     System.out.println("Mouse Moved");
     container.setBackground(Color.BLUE);
     System.out.println("x : " + e.getX() + " | Y : " + e.getY());
