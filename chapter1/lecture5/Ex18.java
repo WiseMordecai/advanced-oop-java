@@ -1,9 +1,6 @@
 package com.advancedoop.theory.chapter1.lecture5;
 
 import javax.swing.*;
-
-import org.w3c.dom.events.MouseEvent;
-
 import java.awt.*;
 import java.awt.event.*;
 
