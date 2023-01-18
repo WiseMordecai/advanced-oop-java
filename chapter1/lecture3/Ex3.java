@@ -57,9 +57,11 @@ public class Ex3 extends JFrame implements ActionListener {
     panel.add(label);
     panel.add(textField);
     panel.add(button);
-    // container.add(textArea, "Center");
-    container.add(textArea);
-    container.add(scrollPane, textArea);
+    /*
+     * container.add(textArea); YOU CANNOT ADD THE TEXT AREA BECAUSE IT IS INSIDE
+     * THE JSCROLLPANE
+     */
+    container.add(scrollPane);
   }
 
   @Override
