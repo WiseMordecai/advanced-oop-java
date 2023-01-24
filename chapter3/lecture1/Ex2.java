@@ -12,5 +12,12 @@ public class Ex2 {
     System.out.println("Port : " + u1.getPort());
     System.out.println("File : " + u1.getPath());
 
+    URL u2 = new URL("http", "www.youtube.com", 80, "/index.html");
+    System.out.println("External Form : " + u2.toExternalForm());
+    System.out.println("Protocol : " + u2.getProtocol());
+    System.out.println("Host : " + u2.getHost());
+    System.out.println("Port : " + u2.getPort());
+    System.out.println("File : " + u2.getPath());
+
   }
 }
