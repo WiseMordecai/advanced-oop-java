@@ -2,7 +2,7 @@ package com.advancedoop.theory.chapter4.lecture2;
 
 import java.sql.*;
 
-public class Ex1 {
+class Ex1 {
   // Simple Program for the SQL connection and queries "Using MySQL"
   public static void main(String[] args) throws Exception {
     // load JDBC Driver
