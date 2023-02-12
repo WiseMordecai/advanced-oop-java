@@ -1,4 +1,4 @@
-package com.advancedoop.theory.chapter4;
+package com.advancedoop.theory.chapter4.lecture1;
 
 import java.sql.*;
 
