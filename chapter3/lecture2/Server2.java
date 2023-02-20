@@ -18,7 +18,6 @@ class Server {
       // String str = scan.nextLine();
       year = scan.nextInt();
       pw.println((2023 - year));
-      pw.println(year);
     }
     // s.close();
     // ss.close();
