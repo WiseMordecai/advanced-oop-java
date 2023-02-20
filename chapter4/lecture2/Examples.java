@@ -17,6 +17,9 @@ public class Examples {
      * database_name
      * and put it in the getConnection method like this jdbc:mysql://localhost/(YOUR
      * DATABASE)
+     * 
+     * 
+     * THIS EXAMPLE FROM ME NOT THE DOCTOR!!!!!!!!!!
      */
 
     // establish a connection to the MySQL Database with given parameters..
